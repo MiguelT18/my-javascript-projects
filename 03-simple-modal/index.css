@@ -1,0 +1,103 @@
+/* Reset Styles */
+body, body * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui;
+}
+
+/* Main Styles */
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url('./assets/hero.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .6);
+  display: grid;
+  place-content: center;
+}
+
+.modal-container {
+  width: fit-content;
+  background-color: rgb(17, 17, 24);
+  margin: 0 auto;
+  padding: 40px 100px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: solid 1px #fff;
+  color: #fff;
+}
+
+.modal-title {
+  font-family: system-ui;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 38px;
+}
+
+.modal-button {
+  width: fit-content;
+  border: none;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, .05);
+  color: #fff;
+  border-radius: 4px;
+  border: solid 2px #aaaaaa;
+  font-family: system-ui;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all .05s linear;
+}
+
+.modal-button:hover {
+  border: solid 2px #13857f;
+  background-color: rgba(53, 133, 127, .1);
+  transform: scale(1.04);
+}
+
+.modal-button:active {
+  transform: scale(.96);
+}
+
+/* Open Modal */
+.open-modal {
+  display: none;
+  width: fit-content;
+  background-color: rgb(17, 17, 24);
+  padding: 100px 180px;
+  border-radius: 10px;
+  flex-direction: column;
+  gap: 30px;
+  border: solid 1px #fff;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.exit-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: all .05s linear;
+}
+
+.exit-button:hover {
+  transform: scale(1.04);
+}
+
+.exit-button:active {
+  transform: scale(.96);
+}
